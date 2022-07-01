@@ -7,7 +7,7 @@ document.getElementById('btn-del').addEventListener('click', function () {
 })
 
 // del all item from input field
-document.getElementById('btn-c').addEventListener('click', function () {
+document.getElementById('btn-ac').addEventListener('click', function () {
 
    document.getElementById('display').value = '';
   
@@ -25,14 +25,15 @@ document.getElementById('btn-total').addEventListener('click', function () {
 function inputNum(id) {
   document.getElementById(id).addEventListener('click', function () {
 
-      let btn = document.getElementById(id).innerText;  
-      result = document.getElementById('display').value += btn;   
-   
+      let text = document.getElementById(id).innerText;  
+      document.getElementById('display').value += text;   
+    // console.log(result);
   })
 }
 
 // call function for button
-inputNum('btn-plus-minus');
+inputNum('btn-b-l');
+inputNum('btn-b-r');
 inputNum('btn-percent');
 inputNum('btn-divider');
 inputNum('btn-7');
@@ -47,5 +48,6 @@ inputNum('btn-1');
 inputNum('btn-2');
 inputNum('btn-3');
 inputNum('btn-plus');
-inputNum('btn-0');
+inputNum('btn-zero');
 inputNum('btn-dot');
+
