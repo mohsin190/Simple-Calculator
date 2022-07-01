@@ -12,29 +12,43 @@
 
 <body>
     <div class="container">
-        <input id="display" type="text">
+        <input id="display" type="text" readonly>
         <div class="buttons">
-            <button id="btn-c" class="black-color">C</button>
-            <button id="btn-plus-minus" class="black-color">+/-</button>
-            <button id="btn-percent" class="black-color">%</button>
-            <button id="btn-divider" class="purple-color">/</button>
-            <button id="btn-7" class="black-color">7</button>
-            <button id="btn-8" class="black-color">8</button>
-            <button id="btn-9" class="black-color">9</button>
-            <button id="btn-x" class="purple-color">*</button>
-            <button id="btn-4" class="black-color">4</button>
-            <button id="btn-5" class="black-color">5</button>
-            <button id="btn-6" class="black-color">6</button>
-            <button id="btn-minus" class="purple-color">-</button>
-            <button id="btn-1" class="black-color">1</button>
-            <button id="btn-2" class="black-color">2</button>
-            <button id="btn-3" class="black-color">3</button>
-            <button id="btn-plus" class="purple-color">+</button>
-            <button id="btn-zero" class="black-color">0</button>
-            <button id="btn-dot" class="black-color">.</button>
-            <button id="btn-del" class="black-color">DEL</button>
-            <button id="btn-total" class="yellow-color">=</button>
 
+            <div class="action">
+                <button id="btn-ac">AC</button>                            
+                <button id="btn-b-l" class="bracket">(</button>
+                <button id="btn-b-r" class="bracket">)</button> 
+                <button id="btn-percent" class="purple-color">%</button>                           
+            </div>
+
+            <div class="group">
+                <div class="number">
+                    <button id="btn-7" class="black-color">7</button>
+                    <button id="btn-8" class="black-color">8</button>
+                    <button id="btn-9" class="black-color">9</button>           
+                    <button id="btn-4" class="black-color">4</button>
+                    <button id="btn-5" class="black-color">5</button>
+                    <button id="btn-6" class="black-color">6</button>           
+                    <button id="btn-1" class="black-color">1</button>
+                    <button id="btn-2" class="black-color">2</button>
+                    <button id="btn-3" class="black-color">3</button>
+                    <button id="btn-zero" class="black-color">0</button>
+                    <button id="btn-dot" class="black-color">.</button>
+                    <button id="btn-del">DEL</button>
+                </div>
+                
+                <div class="operator">                  
+                    <button id="btn-divider" class="purple-color">/</button> 
+                    <button id="btn-x" class="purple-color">*</button>
+                    <button id="btn-plus" class="purple-color">+</button>
+                    <button id="btn-minus" class="purple-color">-</button>
+                    <button id="btn-total" class="yellow-color">=</button>
+                </div>
+    
+            </div>
+
+           
         </div>
     </div>
 

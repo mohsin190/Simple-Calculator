@@ -5,14 +5,16 @@
 }
 body{
   padding: 15% 0;
+  background-color: rgb(0, 0, 0);
 }
 .container {
   width: 300px;
   height: 384px;
   margin: 0 auto;
-  background-color: rgb(248, 206, 179);
+  padding-top: 2px;
+  background-color: rgb(169, 233, 245);
   border-radius: 5px;
-  box-shadow: 2px 2px 6px rgb(112, 114, 114), -2px -2px 6px rgb(110, 111, 111);
+  /* box-shadow: 2px 2px 6px rgb(112, 114, 114), -2px -2px 6px rgb(110, 111, 111); */
 }
 
 input {
@@ -23,9 +25,11 @@ input {
   font-size: 23px;
   font-weight: bold;
   letter-spacing: 1.2px;
-  border: 4px solid rgb(112, 82, 0);
+  border: 4px solid rgb(1, 57, 74);
   border-radius: 5px;
   padding: 0 6px;
+  background-color: rgb(77, 86, 86);
+  color: white;
 }
 
 .buttons {
@@ -34,19 +38,58 @@ input {
   text-align: center;
 }
 
-.buttons button {
+.action button{  
   width: 70px;
   height: 55px;
+  text-align: center;
   margin-top: 5px;
   border: transparent;
   border-radius: 0;
   font-size: large;
   font-weight: bold;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: 0.3s; 
 }
 
-.buttons button:hover {
+.number{
+  width: 75%;
+  float: left;
+  padding-left: 2px;
+}
+
+.number button{
+  width: 70px;
+  height: 55px;
+  text-align: center;
+  margin-top: 5px;
+  border: transparent;
+  border-radius: 0;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s; 
+}
+
+.operator{
+  width: 25%;
+  float: left;
+  padding-right: 2px;
+}
+
+.operator button{
+  width: 69.5px;
+  height: 40px;
+  text-align: center;
+  margin-top: 5px;
+  border: transparent;
+  border-radius: 0;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s; 
+}
+
+ button:hover {
   border: 2px solid rgb(124, 122, 118);
   box-shadow: 1px 1px 5px rgb(119, 118, 116);
 }
@@ -57,12 +100,12 @@ input {
 }
 
 .black-color:hover {
-  background-color: rgb(0, 247, 255);
+  background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
 }
 
 .purple-color {
-  background-color: rgb(102, 3, 249);
+  background-color: rgb(92, 7, 158);
   color: white;
 }
 
@@ -72,14 +115,39 @@ input {
 }
 
 .yellow-color {
-  background-color: rgb(255, 251, 0);
-
+  background-color: rgb(3, 90, 0);
+  color: rgb(247, 253, 255);
 }
 
 .yellow-color:hover {
-  background-color: rgb(74, 245, 12);
-
+  background-color: rgb(245, 191, 12);
+  color: black;
 }
-#btn{
-  color: red;
+
+.operator #btn-total{
+  height: 55px;
+}
+#btn-ac{
+  background-color: rgb(23, 107, 5);
+  color: rgb(255, 255, 255);
+}
+#btn-ac:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 85, 3);
+}
+#btn-del{
+  background-color: rgb(203, 9, 9);
+  color: rgb(255, 255, 255);
+}
+#btn-del:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+}
+.bracket{
+  background-color:darkslategray;
+  color: rgb(254, 254, 6);
+}
+.bracket:hover{
+  background-color:rgb(255, 255, 255);
+  color: rgb(30, 0, 255);
 }
